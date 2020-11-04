@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+// .Menu3{
+//     display: flex;
+//     justify-content: center;
+//     // align-content: center;
+//     padding: 0px 3rem;
+//     align-items: center;
+// }
+
+// .Links3 {
+//     display: flex;
+//     justify-content: center;
+//     align-content: center;
+    
+// }
+
+// .Links3 li, a{
+//     list-style: none;
+//     text-decoration: none;
+//     padding: 0px 5px;
+//     color: #000;
+// }
+
+// @media screen and (max-width:720px){
+//     .Menu3{
+//         display: block;
+//         padding: 0px;
+//         align-self: baseline;
+//     }
+
+//     #MenuIcon3{
+//         background-image: url("./Menu.svg");
+//         width: 30px;
+//         height: 40px;
+//         background-repeat: no-repeat;
+//         background-position: center;
+//         background-size: contain;
+//         position: relative;
+//         right: 25px;
+
+//     }
+//     .Links3{
+//         height: 0px;
+//         width: 79.3%;
+//         background-color: antiquewhite;
+//         display: flex;
+//         flex-direction: column;
+//         overflow: hidden;
+//         position: absolute;
+//         left: 50px;
+//         transition: height 0.2s ease-in-out;
+//     }
+
+//     .Links3 li{
+//         flex: 1;
+//         align-content: center;
+//         display: flex;
+//         justify-content: center;
+//         width: 100%;
+//         background-color: #fff7ad;
+
+//     }
+
+//     .Links3 li:hover{
+//         background-color: #d1cb97;
+//     }
+
+//     .Links3 a{
+//         display: inline-block;
+//         width: 100%;
+//         margin: auto 0px;
+//     }
+
+//     .menu-on3{
+//         height: 180px;
+//         width: 79.3%;
+//         display: flex;
+//         transition: height 0.2s ease-in-out;
+//     }
+// }
+
+.Menu3{
+    width: 60px;
+    // position: relative;
+    // bottom: 1px;
+}
+
+#Logo3 {
+    padding: 0px 20px;
+}
+
+#MenuIcon3{
+    display: none;
+    background-image: url("./Menu.svg");
+    width: 30px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+}
+
+@media screen and (max-width:720px){
+    .Main-Nav{
+        display: none;
+    }
+
+    #MenuIcon3{
+        display: block;
+    }
+}

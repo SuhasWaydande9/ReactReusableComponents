@@ -1,0 +1,75 @@
+.Menu{
+    display: flex;
+    justify-content: center;
+    // align-content: center;
+    padding: 0px 3rem;
+    align-items: center;
+}
+
+.Links {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.Links li, a{
+    list-style: none;
+    text-decoration: none;
+    padding: 0px 5px;
+    color: #000;
+}
+
+@media screen and (max-width:720px){
+    .Menu{
+        display: block;
+        padding: 0px;
+        align-self: baseline;
+    }
+
+    #MenuIcon{
+        background-image: url("./Menu.svg");
+        width: 30px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        position: relative;
+        right: -35px;
+
+    }
+    .Links{
+        height: 0px;
+        background-color: antiquewhite;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        transition: height 0.1s ease-in-out;
+    }
+
+    .Links li{
+        flex: 1;
+        align-content: center;
+        display: flex;
+        justify-content: center;
+        width: 100px;
+        background-color: #fff7ad;
+        z-index: 1;
+    }
+
+    .Links li:hover{
+        background-color: #d1cb97;
+    }
+
+    .Links a{
+        display: inline-block;
+        width: 100%;
+        margin: auto 0px;
+    }
+
+    .menu-on{
+        height: 180px;
+        display: flex;
+        transition: height 0.1s ease-in-out;
+    }
+}

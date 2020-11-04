@@ -1,0 +1,26 @@
+.NavbarContainer {
+    margin: 20px;
+    padding: 20px;
+    background-color: lightgray;
+}
+
+.Navigator{
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    width: inherit;
+    background-color: khaki;
+    margin: 10px;
+    align-items: center;
+}
+
+
+#Logo {
+    padding: 0px 3rem;
+}
+
+
+@media screen and (max-width:720px){
+    
+}

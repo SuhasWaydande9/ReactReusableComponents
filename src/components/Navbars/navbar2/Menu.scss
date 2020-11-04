@@ -1,0 +1,88 @@
+.Menu2{
+    display: flex;
+    justify-content: center;
+    // align-content: center;
+    padding: 0px 3rem;
+    align-items: center;
+}
+
+.Links2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.Links2 li, a{
+    list-style: none;
+    text-decoration: none;
+    padding: 0px 5px;
+    color: #000;
+}
+
+@media screen and (max-width:720px){
+    .Menu2{
+        display: block;
+        padding: 0px;
+        align-self: baseline;
+    }
+
+    #MenuIcon2{
+        background-image: url("./Menu.svg");
+        width: 30px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        position: relative;
+        right: -35px;
+
+    }
+    .Links2{
+        width: 0px;
+        height: 180px;
+        background-color: antiquewhite;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        a{
+            visibility: visible;
+            user-select: none;
+        }
+        transition: width 0.1s ease-out;
+        pointer-events: none;
+    }
+
+    .Links2 li{
+        flex: 1;
+        align-content: center;
+        display: flex;
+        justify-content: center;
+        width: 100px;
+        background-color: #ffffff;
+        border: 1px solid #e2e2e2;
+        z-index: 1;
+    }
+
+    .Links2 li:hover{
+        background-color: #d1cb97;
+    }
+
+    .Links2 a{
+        display: inline-block;
+        width: 100%;
+        margin: auto 0px;
+    }
+
+    .menu-on2{
+        width: 100%;
+        height: 180px;
+        display: flex;
+        transition: width 0.1s ease-out;
+
+        a{
+            visibility: visible;
+            user-select: none;
+        }
+    }
+}
