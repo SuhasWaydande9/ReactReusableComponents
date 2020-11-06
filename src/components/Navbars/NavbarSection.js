@@ -13,7 +13,9 @@ class NavbarSection extends React.Component {
                 <Navbar1 />
                 <Navbar2 />
                 <Navbar3 />
-                <Navbar4 />
+                <div className="NavbarContainer">
+                    <Navbar4 />
+                </div>
             </div>
         )
     }
